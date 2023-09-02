@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* *************************************** SCROLL_BAR ***************************************** */
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* *******************************************HEADER*********************************************** */
+
+.top-nav {
+  display: flex;
+  height: 7vh;
+  z-index: 1;
+  width: 99vw;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.nav-cont ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-cont ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ***************************************** HERO_CONT ******************************************** */
+
+.header-cont {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52));
+}
+
+.header-cont h1 {
+  font-size: 2.2em;
+  letter-spacing: 0.187em;
+  color: white;
+  padding-left: 16px;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.video-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#vid {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+#vid-mob {
+  min-width: 100vw;
+  max-height: 100vh;
+}
+
+@media screen and (min-width: 800px) {
+  #vid-mob {
+    display: none;
+  }
+
+  #vid {
+    display: block;
+  }
+}
+
+/* ********************************************SECTION_1**************************************** */
+
+ion-icon {
+  width: 60px;
+  height: 60px;
+  /* background-color: white;
+  border-radius: 50%; */
+  margin-bottom: 1.6em;
+  /* color: black; */
+}
+
+/* .odd {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+} */
+
+.sect_1 {
+  background-color: #bababa50;
+  padding: 7em 3em;
+  text-align: center;
+  letter-spacing: 0.07em;
+}
+
+.card-cont {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4em;
+  gap: 34px;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  min-height: 250px;
+  border-radius: 40px;
+  background-color: white;
+  text-align: center;
+  padding: 2.8em;
+}
+
+.card h3 {
+  letter-spacing: 0.16em;
+  font-family: "Orbitron", sans-serif;
+  font-size: 23px;
+}
+
+.two,
+.four {
+  color: white;
+  background-color: black;
+}
+
+.sect_1 h1 {
+  font-size: 30px;
+  letter-spacing: 0.088em;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+}
+
+.sect_1 > p {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 800px) {
+  .card-cont {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 50px;
+  }
+
+  .card {
+    min-width: 300px;
+    min-height: 250px;
+    padding: 3em;
+    font-size: 16px;
+  }
+}
