@@ -36,17 +36,55 @@
   position: absolute;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2em;
+  margin-top: 1.5em;
 }
 
-.nav-cont ul {
-  list-style: none;
-  display: flex;
-}
-
-.nav-cont ul li a {
+.top-nav a {
+  margin-right: 2em;
+  padding-bottom: 5px;
   color: white;
+  font-size: 14px;
   text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+.top-nav a:hover {
+  font-weight: 700;
+  color: black;
+  border-bottom: 3px solid rgb(0, 118, 164);
+}
+
+.logo {
+  background-image: url(../images/logo1.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+}
+
+.wrap {
+  animation: blinkTextCursor 500ms steps(44) infinite;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .top-nav a {
+    font-size: 2em;
+  }
+
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 /* ***************************************** HERO_CONT ******************************************** */
@@ -56,19 +94,25 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  padding-left: 1.6em;
   align-items: center;
   overflow: hidden;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.79));
 }
 
-.header-cont h1 {
-  font-size: 2.2em;
+.header-cont .wrap {
+  font-size: 2em;
   letter-spacing: 0.187em;
   color: white;
-  padding-left: 16px;
   font-family: "Orbitron", sans-serif;
   text-transform: uppercase;
   z-index: 1;
+}
+
+.header-cont h1 a {
+  text-decoration: none;
+  color: white;
+  font-family: "Orbitron", sans-serif;
 }
 
 .video-cont {
@@ -127,6 +171,7 @@ ion-icon {
   width: 300px;
   min-height: 250px;
   border-radius: 40px;
+  font-size: 16px;
   background-color: white;
   text-align: center;
   padding: 2.8em;
@@ -156,9 +201,8 @@ ion-icon {
 }
 
 @media screen and (min-width: 800px) {
-
-  .sect_1{
-    height: 90vh;
+  .sect_1 {
+    height: 83vh;
   }
   .card-cont {
     height: 50vh;
@@ -231,7 +275,12 @@ ion-icon {
 /* *******************************************SECTION_2****************************************** */
 
 .sect_2 {
-  padding: 4em 3em;
+  padding: 4em 3em 2em 3em;
+}
+
+.sect_2 p{
+  padding-top: 1em;
+  font-size: 16px;
 }
 
 .pic-cont {
@@ -239,11 +288,12 @@ ion-icon {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 
 .pic-cont h2 {
   font-family: "Orbitron", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .rot-logo {
@@ -265,3 +315,5 @@ ion-icon {
     transform: rotate(360deg);
   }
 }
+
+/* ****************************************SECTION_4**************************************** */

@@ -4,7 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Think Beyond</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/carousel.css" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -20,7 +35,17 @@
       <a href="#">Contact Us</a>
     </header>
     <section class="header-cont">
-      <h1>Where Imagination Meets Innovation... <br /></h1>
+      <h1 class="tagline">
+        <a
+          href=""
+          class="typewrite"
+          data-period="2000"
+          data-type='[ "WHERE IMAGINATION MEETS INNOVATION...", "LETS BUILD IOT", "I Love Design.", "I Love to Develop." ]'
+        >
+          <span class="wrap"></span>
+        </a>
+        <br />
+      </h1>
       <div class="video-cont">
         <video autoplay muted loop id="vid">
           <source src="./images/videos/bg-video.mp4" type="video/mp4" />
@@ -93,21 +118,107 @@
         </p>
       </div>
     </section>
-    <section class="sect_3">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quia
-        magni provident, rerum laborum doloremque eveniet dicta vero neque fuga
-        tempora tenetur error esse labore minima, consectetur officiis! Vitae
-        repudiandae sint numquam quasi, nam doloribus asperiores et assumenda.
-        Nisi dolor sapiente minus animi recusandae ipsam soluta totam amet
-        accusamus magnam error fugiat excepturi reiciendis ipsa consequuntur
-        neque necessitatibus aspernatur, sequi consequatur cum! Delectus qui
-        repellat officia porro voluptatibus cum numquam, laboriosam et quaerat
-        modi expedita minus eveniet eligendi quae voluptas laudantium magnam
-        voluptates minima laborum ipsa doloribus distinctio aspernatur
-        cupiditate ea? Esse dolores tenetur quia eius illum maxime assumenda
-        facilis.
-      </p>
+    <section class="sect_3" id="tranding">
+      <div class="container container1">
+        <h3 class="text-center section-subheading">- Popular Clients -</h3>
+        <h1 class="text-center section-heading">Clientele</h1>
+      </div>
+      <div class="container container2">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="./images/clients/1.jpg" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="./images/clients/2.png" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="./images/clients/3.png" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="./images/clients/4.jpg" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="./images/clients/5.jpg" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="./images/clients/6.jpg" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="./images/clients/7.jpg" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="./images/clients/8.jpg" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="./images/clients/9.png" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="sect_4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos veritatis
+      possimus pariatur, iusto perspiciatis nisi, minima laborum sapiente
+      delectus accusantium molestiae voluptatibus, aspernatur aut saepe beatae
+      ex! Fugiat aliquam nesciunt eius vitae adipisci, molestiae reiciendis
+      pariatur explicabo porro non vel officiis error nemo velit enim cumque hic
+      magnam, temporibus dignissimos quod et minus facere dolore. Beatae odio
+      voluptas, molestias nihil tenetur tempora inventore? Magni esse animi
+      mollitia officia. Iusto beatae neque maxime nesciunt distinctio earum
+      repudiandae ad cupiditate voluptate natus omnis dolor id iure impedit,
+      quos, pariatur perspiciatis. Illum sapiente eaque omnis? Est
+      necessitatibus quos ex asperiores, non debitis ea.
+    </section>
+
+    <script src="./index.js"></script>
+    <script src="./carousel.js"></script>
   </body>
 </html>
