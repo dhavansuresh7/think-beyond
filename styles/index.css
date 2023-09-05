@@ -63,6 +63,10 @@
   height: 150px;
 }
 
+.top-nav>a:hover{
+  border-bottom: none;
+}
+
 .wrap {
   animation: blinkTextCursor 500ms steps(44) infinite;
 }
@@ -394,6 +398,10 @@ ion-icon {
   font-family: "Orbitron", sans-serif;
 }
 
+.sect_4 a:hover{
+  cursor: pointer;
+}
+
 @media screen and (min-width:800px) {
   .sect_4 center{
     height: 50vh;
@@ -481,7 +489,7 @@ ion-icon {
 .footer-dark .copyright {
   text-align:center;
   padding-top:24px;
-  opacity:0.3;
+  opacity:0.23;
   font-size:13px;
   padding-bottom: 1em;
 }
