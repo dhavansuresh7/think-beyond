@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* *************************************** SCROLL_BAR ***************************************** */
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* *******************************************HEADER*********************************************** */
+
+.top-nav {
+  position: absolute;
+  display: flex;
+  height: 5vh;
+  z-index: 1;
+  width: 99vw;
+  margin-bottom: 1em;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.top-nav a {
+  margin-right: 2em;
+  padding-bottom: 5px;
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+.top-nav a:hover {
+  color: black;
+  border-bottom: 3px solid rgb(0, 118, 164);
+}
+
+.logo {
+  background-image: url(../images/logo1.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+}
+
+.top-nav > a:hover {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 800px) {
+  .top-nav a {
+    font-size: 1.24em;
+  }
+
+  .top-nav {
+    margin-bottom: 2em;
+  }
+
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* *******************************************SECTION_1************************************************ */
+
+.sect_1 {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.7)),
+    url(../images/contact.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-position: left;
+}
+
+.sect_1 h1 {
+  font-size: 32px;
+  color: white;
+  letter-spacing: 0.2em;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* ********************************************SECTION_2************************************************** */
+
+.sect_2 {
+  display: flex;
+  text-align: center;
+  gap: 50px;
+  flex-direction: column;
+  padding: 3em 2em;
+}
+
+.sect_2 h1 {
+  padding-bottom: 1em;
+  letter-spacing: 0.15em;
+  font-family: "Orbitron", sans-serif;
+}
+
+.left-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-cont a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+  .sect_2 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .left-cont{
+    gap: 30px;
+  }
+
+  .left-cont .item.social{
+    display: flex;
+    gap: 34px;
+  }
+}
+
+/* ********************************************FOOTER******************************************* */
+
+.footer-dark {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.79);
+}
+
+.footer-dark h3 {
+  font-family: "Orbitron", sans-serif;
+  padding-top: 5em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+  text-align: center;
+  padding: 0 3em;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  width: 70vw;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  display: inline-block;
+  text-align: center;
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.social ion-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.23;
+  font-size: 13px;
+  padding-bottom: 1em;
+}
