@@ -128,7 +128,14 @@
 
 .left-cont a {
   font-weight: 700;
+  color: blueviolet;
   text-decoration: none;
+}
+
+.left-cont .item.social {
+  display: flex;
+  gap: 34px;
+  justify-content: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -141,13 +148,12 @@
     text-align: left;
   }
 
-  .left-cont{
+  .left-cont {
     gap: 30px;
   }
 
   .left-cont .item.social{
-    display: flex;
-    gap: 34px;
+    justify-content: left;
   }
 }
 
